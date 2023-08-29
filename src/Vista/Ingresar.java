@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package inventario;
+package Vista;
 
+import Vista.Inventario;
 import javax.swing.JOptionPane;
 
 /**
@@ -149,6 +150,7 @@ public class Ingresar extends javax.swing.JFrame {
             if(txtContrasenha.getText().equals("#RYNPS4C")){
                 Inventario Inventario = new Inventario();             
                 Inventario.setVisible(true);
+                setVisible(false);
             }else{
                 JOptionPane.showMessageDialog(null, "Contraseña incorrecta.");
             }

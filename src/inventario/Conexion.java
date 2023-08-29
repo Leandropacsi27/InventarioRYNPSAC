@@ -10,7 +10,7 @@ public class Conexion {
     public Connection conectar() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/base_datos","root","");
+            cn=DriverManager.getConnection("jdbc:mysql://localhost:3306/rynpsac","root","");
             JOptionPane.showMessageDialog(null, "La conexion a la base de datos fue exitosa");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "La conexion a la base de datos no fue exitosa"+ e.toString());
